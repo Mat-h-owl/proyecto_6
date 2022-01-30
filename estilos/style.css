@@ -1,0 +1,144 @@
+.box{
+    border-radius: 8px;
+    height: 40px;
+    width: 80px;
+    margin: 60px auto;
+
+}
+
+.box1{
+    background-color: blue;
+
+}
+
+.box2{
+    background-color: red;
+    
+}
+
+/*transformaciòn*/
+.box:hover{
+    transform: scale(3);
+}
+
+
+/*transición*/
+
+.box2{
+    transition: all;
+    transition-duration: 1s;
+}
+
+.circulo1, .circulo2, .circulo3,
+.circulo4, .circulo5{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin: 20px;
+}
+
+.circulo1{
+    background-color: blue;
+    transition: all 1.5s ease;
+}
+
+.circulo2{
+    background-color: red;
+    transition: all 1.5s ease-in;
+}
+
+.circulo3{
+    background-color: green;
+    transition: all 1.5s ease-in-out;
+}
+
+.circulo4{
+    background-color: purple;
+    transition: all 1.5s ease-out;
+}
+
+.circulo5{
+    background-color: rosybrown;
+    transition: all 1.5s step-end;
+}
+
+.container-circle:hover .circulo1,
+.container-circle:hover .circulo2,
+.container-circle:hover .circulo3,
+.container-circle:hover .circulo4,
+.container-circle:hover .circulo5{
+    transform: translateX(600px);
+}
+
+.square1, .square2{
+    border-radius: 5px;
+    height: 150px;
+    width: 150px;
+    margin: 100px;
+    position: absolute;
+}
+
+.square1 {
+    background-color: royalblue;
+}
+
+.square2 {
+    background-color: violet;
+    transition: all 2s;
+}
+
+.square2:hover {
+    transform: translate(400px,-100px);
+}
+
+
+.combinado {
+    background-color: brown;
+    border-radius: 5px;
+    height: 150px;
+    width: 150px;
+    margin: 100px auto;
+    transition: all 2s;
+}
+
+
+.combinado2 {
+    background-color: brown;
+    border-radius: 5px;
+    height: 150px;
+    width: 150px;
+    margin: 100px auto;
+    transition: all 2s;
+    
+}
+
+.combinado:hover{
+    transform: rotate(-90deg) scale(2) translateX(0px);
+}
+
+.combinado2:hover{
+    transform: skewY(-20deg) translateX(0px);
+}
+
+.animaciones{
+    background-color: red;
+    border-radius: 5px;
+    height: 150px;
+    width: 150px;
+    margin: 100px auto;
+}
+
+.animaciones:hover{
+    animation: change-color 5s
+    ;
+
+
+}
+
+@keyframes change-color{
+    10%{background-color: royalblue;}
+    25%{border-radius: 50%;}
+    50%{width: 300px;}
+    75%{background-color: rosybrown;}
+    90%{border-radius: 30%;}
+}
