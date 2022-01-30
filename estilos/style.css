@@ -1,3 +1,5 @@
+/*RAMA STYLE*/
+
 .box{
     border-radius: 8px;
     height: 40px;
@@ -119,6 +121,7 @@
 .combinado2:hover{
     transform: skewY(-20deg) translateX(0px);
 }
+
 
 .animaciones{
     background-color: red;
